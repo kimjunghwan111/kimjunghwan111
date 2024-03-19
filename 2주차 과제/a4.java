@@ -1,0 +1,21 @@
+package chap01;
+
+import java.util.Scanner;
+
+public class a4 {
+	public class Main {
+	    public static void main(String[] args) {
+	        try (Scanner in = new Scanner(System.in)) {
+				System.out.print("초 단위 정수를 입력하세요 : ");
+				int second = in.nextInt();
+
+				int minute = second / 60;
+				int hour = minute / 60;
+				second = second % 60;
+
+
+				System.out.printf("%d시간 %d분 %d초" ,hour, minute, second);
+			}
+	    }
+	}
+}
